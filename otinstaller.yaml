@@ -36,7 +36,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/xurlfind3r@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/xurlfind3r@sha256:9ce74d3a51313e8451a8101225a94e461dd0a46d56ac2c65f2355b34578d7418
   platforms: [linux/amd64, linux/arm64]
   command: ["xurlfind3r", "-d", "{domain}", "--jsonl", "-s", "-m"]
   output_format: jsonl
